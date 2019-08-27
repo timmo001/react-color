@@ -16,7 +16,7 @@ export const ColorWrap = (Picker) => {
       }, 100)
     }
 
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
       this.setState({
         ...color.toState(nextProps.color, this.state.oldHue),
       })

@@ -25,7 +25,7 @@ export class EditableInput extends (PureComponent || Component) {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const input = this.input
     if (nextProps.value !== this.state.value) {
       if (input === document.activeElement) {
